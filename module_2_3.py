@@ -38,11 +38,3 @@ while True:
         positive.append(my_list[index])
         index += 1
     print(positive)
-        #else:
-        #    break
-        #else:
-        #    break
-
-
-
-
