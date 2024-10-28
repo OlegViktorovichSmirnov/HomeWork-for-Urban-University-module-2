@@ -37,4 +37,4 @@ while True:
             break
         positive.append(my_list[index])
         index += 1
-    print(positive)
+    print(f'{positive}')
