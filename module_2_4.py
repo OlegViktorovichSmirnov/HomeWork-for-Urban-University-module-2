@@ -34,4 +34,4 @@ not_primes = []
 index = 0
 for index in range(1,14,2):
     primes = index
-    print(f'{primes}')
+    print(''.join([str(primes) for primes in range (15)]))
