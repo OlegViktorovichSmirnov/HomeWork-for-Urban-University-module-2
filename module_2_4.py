@@ -31,7 +31,15 @@ from operator import index
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 primes = []
 not_primes = []
-index = 0
-for index in range(1,14,2):
-    primes = index
-    print(''.join([str(primes) for primes in range (15)]))
+# index = 0
+# for index in range(1,14,2):
+    # primes = index
+    # print(''.join([str(primes) for primes in range (15)]))
+# for numbers in range(1,14,2):
+#     print(numbers , end='')
+for numbers in range(1, 14, 2):
+    primes.append(str(numbers))  # => [1, 2, 3, 4... 13]
+print(' '.join(primes))
+for numbers in range(4, 16, 2):
+    not_primes.append(str(numbers))  # => [1, 2, 3, 4... 13]
+print(' '.join(not_primes))
