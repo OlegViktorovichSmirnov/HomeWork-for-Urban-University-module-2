@@ -39,7 +39,7 @@ for index in range(1, 16):
             k = k + 1
     if (k <= 0):
         primes.append(str(index))
-        print(' '.join(primes))
+        print(f'Primes: {primes}')
     else:
         not_primes.append(str(index))
-        print(' '.join(not_primes))
+        print(f'Not Primes: {not_primes}')
