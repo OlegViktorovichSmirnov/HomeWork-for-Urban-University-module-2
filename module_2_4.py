@@ -26,20 +26,20 @@
 # Для проверки на простоту числа вам нужно убедиться, что выбранное число не делиться ни на что в диапазоне от 2 до этого числа(не включительно).
 # Попробуйте оптимизировать(ускорить) процесс выяснения простоты числа при помощи оператора break, когда найдёте делитель. (Не обязательно)
 # Переменные меняющее своё булево состояние на противоположное в процессе проверки, как is_prime, в кругах разработчиков называются перменными-флагами(flag).
-from operator import index
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+index = 0
 primes = []
 not_primes = []
-# index = 0
-# for index in range(1,14,2):
-    # primes = index
-    # print(''.join([str(primes) for primes in range (15)]))
-# for numbers in range(1,14,2):
-#     print(numbers , end='')
-for numbers in range(1, 14, 2):
-    primes.append(str(numbers))  # => [1, 2, 3, 4... 13]
-print(' '.join(primes))
-for numbers in range(4, 16, 2):
-    not_primes.append(str(numbers))  # => [1, 2, 3, 4... 13]
-print(' '.join(not_primes))
+
+for index in range(1, 16):
+    k = 0
+    for i in range(2, index // 2 + 1):
+        if (index % i == 0):
+            k = k + 1
+    if (k <= 0):
+        primes.append(str(index))
+        print(' '.join(primes))
+    else:
+        not_primes.append(str(index))
+        print(' '.join(not_primes))
